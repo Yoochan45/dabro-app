@@ -1,0 +1,294 @@
+/* Dabro Professional Black & White Theme */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #fff;
+    color: #000;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 100vh;
+}
+
+.App {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+    min-height: calc(100vh - 200px);
+    padding-bottom: 3rem;
+}
+
+.navbar {
+    background-color: #000 !important;
+    border-bottom: 1px solid #333;
+    padding: 0.75rem 0;
+}
+
+.navbar .container-fluid {
+    max-width: none;
+}
+
+.navbar .nav-link,
+.navbar .navbar-brand,
+.navbar .btn {
+    color: #fff !important;
+}
+
+.navbar .nav-link {
+    transition: all 0.3s ease;
+    border-radius: 8px;
+    padding: 8px 12px;
+    margin: 0 2px;
+}
+
+.navbar .nav-link:hover {
+    color: #fff !important;
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: translateY(-2px);
+}
+
+.navbar .nav-link.active {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff !important;
+}
+
+.navbar-brand {
+    transition: all 0.3s ease;
+    padding: 8px 12px;
+    border-radius: 8px;
+}
+
+.navbar-brand:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: scale(1.05);
+}
+
+.navbar .dropdown-toggle {
+    border: none;
+    background: transparent;
+    transition: all 0.3s ease;
+    border-radius: 25px;
+    padding: 8px 12px;
+}
+
+.navbar .dropdown-toggle:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: translateY(-1px);
+    box-shadow: 0 2px 8px rgba(255, 255, 255, 0.2);
+}
+
+.navbar .dropdown-toggle:focus {
+    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.3);
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.user-avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.navbar .dropdown-toggle:hover .user-avatar {
+    transform: scale(1.1);
+}
+
+.navbar .dropdown-toggle:hover i {
+    transform: scale(1.1);
+}
+
+/* Chat Button Styling */
+.btn-chat {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.btn-chat:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.6);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.2);
+}
+
+.btn-chat i {
+    font-size: 18px;
+}
+
+/* Bottom Navigation for Mobile App */
+.bottom-navbar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #000;
+    border-top: 1px solid #333;
+    z-index: 1000;
+    padding: 8px 0;
+}
+
+.bottom-nav-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 100%;
+}
+
+.bottom-nav-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: #ccc;
+    padding: 8px 12px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    min-width: 60px;
+}
+
+.bottom-nav-item i {
+    font-size: 20px;
+    margin-bottom: 4px;
+}
+
+.bottom-nav-item span {
+    font-size: 10px;
+    font-weight: 500;
+}
+
+.bottom-nav-item:hover,
+.bottom-nav-item.active {
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: translateY(-2px);
+}
+
+.bottom-nav-item.active {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Adjust main content for bottom navbar */
+@media (max-width: 767.98px) {
+    .App {
+        padding-bottom: 70px;
+    }
+}
+
+.card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.btn-primary {
+    background-color: #000;
+    color: #fff;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+.btn-outline-dark {
+    border-color: #000;
+    color: #000;
+}
+
+.btn-outline-dark:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.hero-carousel {
+    height: 400px;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+}
+
+.news-card {
+    height: 300px;
+}
+
+.news-card img {
+    height: 150px;
+    object-fit: cover;
+}
+
+.payment-card {
+    border-left: 4px solid #000;
+}
+
+.status-belum {
+    background-color: #dc3545;
+    color: white;
+}
+
+.status-pending {
+    background-color: #fd7e14;
+    color: white;
+}
+
+.status-lunas {
+    background-color: #198754;
+    color: white;
+}
+
+.santri-card {
+    text-align: center;
+    padding: 1rem;
+}
+
+.santri-avatar {
+    width: 80px;
+    height: 80px;
+    background-color: #f8f9fa;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1rem;
+    font-size: 2rem;
+    color: #6c757d;
+}
+
+.dropdown-menu {
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+
+.dropdown-item:hover {
+    background-color: #f8f9fa;
+}
+
+.footer {
+    background-color: #000;
+    color: #fff;
+    margin-top: auto;
+    width: 100%;
+}
+
+.footer a {
+    color: #ccc;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: #fff;
+}
