@@ -7,11 +7,6 @@
 
 Dabro App is a React-based web application for Pesantren Darul Abror. It provides real-time chat, news pages, and user authentication backed by Supabase and a REST API.
 
-## Badges
-- Top language: JavaScript
-- License: MIT (recommended)
-- CI: not configured (add GitHub Actions to enable)
-
 ## Key Features
 - User-friendly UI built with React and Bootstrap
 - Reusable React components for maintainability
@@ -113,3 +108,7 @@ This repository currently has no license file. It is recommended to add a LICENS
 - Axios
 - Socket.IO
 - Supabase
+
+## Author
+Aisiya Qutwatunnada
+@yoockh
